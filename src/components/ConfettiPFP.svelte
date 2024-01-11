@@ -57,8 +57,10 @@
         align-items: center;
         justify-content: center;
         position: relative;
-        height: 400px;
-        width: 400px;
+        max-height: 400px;
+        max-width: 400px;
+        min-height: 200px;
+        min-width: 200px;
         border-radius: 0.5rem;
         user-select: none;
         /* make it undraggable */

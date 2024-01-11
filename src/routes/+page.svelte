@@ -40,7 +40,7 @@
     @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
 
     .container {
-        height: 100%;
+        min-height: 100vh;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -52,18 +52,7 @@
         flex-direction: row;
         gap: 25px;
     }
-    .image {
-        height: 400px;
-        width: 400px;
-        pointer-events: none;
-        /* make it undraggable */
-        user-select: none;
-        -moz-user-select: none;
-        -webkit-user-drag: none;
-        -webkit-user-select: none;
-        -ms-user-select: none;
-        pointer-events: none;
-    }
+
     .info-container {
         display: flex;
         flex-direction: column;
@@ -82,6 +71,28 @@
         flex-direction: row;
         align-items: center;
         gap: 40px;
+    }
+
+    @media (max-width: 830px) {
+        .portfolio {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        .text-container {
+            justify-self: center;
+            align-items: center;
+            text-align: center;
+        }
+        .text-container h2 {
+            max-width: 400px;
+        }
+        .info-container {
+            justify-self: center;
+            align-items: center;
+            gap: 30px;
+        }
     }
 
     h1 {
