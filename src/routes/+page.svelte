@@ -53,8 +53,8 @@
         gap: 25px;
     }
     .image {
-        height: 300px;
-        width: 300px;
+        height: 400px;
+        width: 400px;
     }
     .info-container {
         display: flex;
@@ -66,7 +66,7 @@
     .text-container {
         display: flex;
         flex-direction: column;
-        gap: 10px;
+        gap: 20px;
     }
 
     .icons {
@@ -74,10 +74,6 @@
         flex-direction: row;
         align-items: center;
         gap: 40px;
-    }
-
-    .icon {
-        height: 54px;
     }
 
     h1 {
