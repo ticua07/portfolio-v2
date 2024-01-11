@@ -1,14 +1,14 @@
 <script>
+    import ConfettiPfp from "../components/ConfettiPFP.svelte";
+    import ConfettiWholePage from "../components/ConfettiWholePage.svelte";
     import Icon from "../components/Icon.svelte";
 </script>
 
 <div class="container">
+    <ConfettiWholePage />
     <div class="portfolio">
-        <img
-            class="image"
-            src="./cat.png"
-            alt="Character Madeline from Celeste"
-        />
+        <!-- <img class="image" src="./cat.png" alt="Nerd cat with glasses" /> -->
+        <ConfettiPfp />
         <div class="info-container">
             <div class="text-container">
                 <h1>Ticua</h1>
@@ -55,6 +55,14 @@
     .image {
         height: 400px;
         width: 400px;
+        pointer-events: none;
+        /* make it undraggable */
+        user-select: none;
+        -moz-user-select: none;
+        -webkit-user-drag: none;
+        -webkit-user-select: none;
+        -ms-user-select: none;
+        pointer-events: none;
     }
     .info-container {
         display: flex;
