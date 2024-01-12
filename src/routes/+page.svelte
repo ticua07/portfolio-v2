@@ -1,7 +1,25 @@
-<script>
+<script lang="ts">
+    import { onMount } from "svelte";
     import ConfettiPfp from "../components/ConfettiPFP.svelte";
     import ConfettiWholePage from "../components/ConfettiWholePage.svelte";
     import Icon from "../components/Icon.svelte";
+    import ConfettiEasterEgg from "../components/ConfettiEasterEgg.svelte";
+
+    let keys = ["t", "r", "a", "n", "s", "Enter"];
+    let temp_pressed: string[] = [];
+    let ee_activated = false;
+
+    onMount(() => {
+        document.addEventListener("keypress", (event) => {
+            temp_pressed.push(event.key.toString());
+
+            // Check if temp_pressed is equal to keys
+            if (temp_pressed.join("") === keys.join("")) {
+                ee_activated = true;
+                temp_pressed = []; // Reset temp_pressed if the sequence is correct
+            }
+        });
+    });
 </script>
 
 <svelte:head>
@@ -9,6 +27,9 @@
 </svelte:head>
 
 <div class="container">
+    {#if ee_activated}
+        <ConfettiEasterEgg />
+    {/if}
     <ConfettiWholePage />
     <div class="portfolio">
         <ConfettiPfp />
