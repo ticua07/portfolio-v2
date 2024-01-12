@@ -4,10 +4,13 @@
     import Icon from "../components/Icon.svelte";
 </script>
 
+<svelte:head>
+    <title>Ticua's Portfolio</title>
+</svelte:head>
+
 <div class="container">
     <ConfettiWholePage />
     <div class="portfolio">
-        <!-- <img class="image" src="./cat.png" alt="Nerd cat with glasses" /> -->
         <ConfettiPfp />
         <div class="info-container">
             <div class="text-container">
