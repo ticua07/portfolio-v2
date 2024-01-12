@@ -2,6 +2,10 @@
     import { page } from "$app/stores";
 </script>
 
+<svelte:head>
+    <title>{$page.status} - {$page.error?.message}</title>
+</svelte:head>
+
 <div class="container">
     <img
         src="https://http.cat/images/{$page.status}.jpg"
