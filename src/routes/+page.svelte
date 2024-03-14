@@ -173,7 +173,7 @@
     font-style: italic;
     cursor: pointer;
     opacity: 80%;
-    transition: opacity 0.15s;
+    transition: opacity 0.05s;
   }
   a:hover {
     opacity: 100%;
