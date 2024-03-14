@@ -30,18 +30,34 @@
   {#if ee_activated}
     <ConfettiEasterEgg />
   {/if}
-  <ConfettiWholePage />
   <div class="portfolio">
     <ConfettiPfp />
     <div class="info-container">
       <div class="text-container">
         <h1>Ticua</h1>
         <h2>
-          Passionate developer who loves
-          <span style="color: #F0DB4F">Web Development</span>
+          Passionate <span style="color: #F0DB4F">Web Developer</span> in
+          <span style="color: #61DBFB">React</span>,
+          <span style="color: #AAA">NextJS</span> and
+          <span style="color: #ff3c00">Svelte</span>
 
           <br />With knowledge in both front-end and back-end services
         </h2>
+        <div class="projects-container">
+          <h2>Check out:</h2>
+          <ul class="projects">
+            <li>
+              <a href="https://link.ticua.ar"
+                >Astro Shortener - Shorten your links</a
+              >
+            </li>
+            <li>
+              <a href="https://faste.ticua.ar"
+                >Faste - Create your pastes faster.</a
+              >
+            </li>
+          </ul>
+        </div>
       </div>
       <div class="icons">
         <Icon
@@ -80,13 +96,25 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    padding-right: 10px;
+    padding-right: 15px;
   }
 
   .text-container {
     display: flex;
     flex-direction: column;
     gap: 20px;
+  }
+
+  .projects-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .projects {
+    margin-top: 6px;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
   }
 
   .icons {
@@ -127,8 +155,27 @@
     opacity: 93.33%;
     color: #eee;
   }
-  h1,
-  h2 {
+  * {
     font-family: "Inter";
+  }
+
+  ul {
+    list-style-type: none;
+  }
+
+  li {
+    color: #eee;
+    font-size: 21px;
+  }
+  a {
+    all: unset;
+    text-decoration: underline;
+    font-style: italic;
+    cursor: pointer;
+    opacity: 80%;
+    transition: opacity 0.15s;
+  }
+  a:hover {
+    opacity: 100%;
   }
 </style>
