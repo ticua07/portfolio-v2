@@ -53,7 +53,12 @@
             </li>
             <li>
               <a href="https://paste.ticua.ar"
-                >Faste - Create your pastes faster.</a
+                >Faste - Create your pastes faster</a
+              >
+            </li>
+            <li>
+              <a href="https://paste.ticua.ar"
+                >Word FS - Share files with a 3-word code</a
               >
             </li>
           </ul>
@@ -114,7 +119,7 @@
     margin-top: 6px;
     display: flex;
     flex-direction: column;
-    gap: 6px;
+    gap: 10px;
   }
 
   .icons {
