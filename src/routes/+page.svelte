@@ -52,7 +52,7 @@
               >
             </li>
             <li>
-              <a href="https://faste.ticua.ar"
+              <a href="https://paste.ticua.ar"
                 >Faste - Create your pastes faster.</a
               >
             </li>
