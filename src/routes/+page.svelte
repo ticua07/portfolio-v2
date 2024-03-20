@@ -57,7 +57,7 @@
               >
             </li>
             <li>
-              <a href="https://paste.ticua.ar"
+              <a href="https://fs.ticua.ar"
                 >Word FS - Share files with a 3-word code</a
               >
             </li>
