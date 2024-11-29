@@ -4,6 +4,7 @@
   import ConfettiWholePage from "../components/ConfettiWholePage.svelte";
   import Icon from "../components/Icon.svelte";
   import ConfettiEasterEgg from "../components/ConfettiEasterEgg.svelte";
+  import links from "./links.json";
 
   let keys = ["t", "r", "a", "n", "s", "Enter"];
   let temp_pressed: string[] = [];
@@ -46,21 +47,11 @@
         <div class="projects-container">
           <h2>Check out:</h2>
           <ul class="projects">
-            <li>
-              <a href="https://link.ticua.ar"
-                >Astro Shortener - Shorten your links</a
-              >
-            </li>
-            <li>
-              <a href="https://paste.ticua.ar"
-                >Faste - Create your pastes faster</a
-              >
-            </li>
-            <li>
-              <a href="https://fs.ticua.ar"
-                >Word FS - Share files with a 3-word code</a
-              >
-            </li>
+            {#each links as link}
+              <li>
+                <a href={link.link}>{link.description}</a>
+              </li>
+            {/each}
           </ul>
         </div>
       </div>
@@ -127,6 +118,7 @@
     flex-direction: row;
     align-items: center;
     gap: 40px;
+    padding-top: 20px;
   }
 
   @media (max-width: 830px) {
