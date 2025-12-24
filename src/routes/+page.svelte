@@ -62,7 +62,7 @@
           src="gh-logo.svg"
         />
         <Icon
-          url="https://discordapp.com/users/448952682611474442"
+          url="https://discord.com/users/677724144762355714"
           alt="Discord's logo"
           src="ds-logo.svg"
         />
